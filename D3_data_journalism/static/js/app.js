@@ -20,8 +20,8 @@ let height = svgHeight - margin.top - margin.bottom;
 let svg = d3
     .select("#scatter")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", svgWidth)
+    .attr("height", svgHeight);
 
 // Append an SVG group
 
@@ -76,7 +76,7 @@ function updateToolTip(chosenXaxis, circlesGroup) {
 
     var toolTip = d3.tip()
         .attr("class", "d3-tip")
-        .offset([80, -60])
+        .offset([30, -40])
         .html(function (d) {
             return (`${label}`);
         });
@@ -153,7 +153,7 @@ d3.csv("data.csv").then(function (censusData, err) {
     let ageLabel = labelsGroup.append("text")
         .attr("x", 0)
         .attr("y", 40)
-        .attr("value", "healthcare") // value to grab for event listener
+        .attr("value", "age") // value to grab for event listener
         .classed("inactive", true)
         .text("Age(Median)");
 
@@ -177,13 +177,13 @@ d3.csv("data.csv").then(function (censusData, err) {
             if (value !== chosenXaxis) {
 
                 // replaces chosenXAxis with value
-                chosenXAxis = value;
+                chosenXaxis = value;
 
                 // console.log(chosenXAxis)
 
                 // functions here found above csv import
                 // updates x scale for new data
-                xLinearScale = xScale(hairData, chosenXaxis);
+                xLinearScale = Xscale(censusData, chosenXaxis);
 
                 // updates x axis with transition
                 xAxis = renderAxes(xLinearScale, xAxis);
@@ -192,7 +192,7 @@ d3.csv("data.csv").then(function (censusData, err) {
                 circlesGroup = renderCircles(circlesGroup, xLinearScale, chosenXaxis);
 
                 // updates tooltips with new info
-                circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
+                circlesGroup = updateToolTip(chosenXaxis, circlesGroup);
 
 
                 // changes classes to change bold text
