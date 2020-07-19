@@ -3,6 +3,10 @@
   border: 1px solid #e3e3e3;
 }
 
+.box-corr{
+margin-top: 25px;
+}
+
 /* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
 html {
   position: relative;

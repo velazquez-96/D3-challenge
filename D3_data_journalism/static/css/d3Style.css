@@ -28,16 +28,22 @@
   font-family: sans-serif;
   fill: #fff;
   text-anchor: middle;
+  font-size: x-small;
+  font-weight: bold;
 }
 
 .stateCircle {
-  fill: #89bdd3;
-  stroke: #e3e3e3;
+  fill: #094158;
+  stroke: #e4d7d7;
+}
+.stateCircle:hover{
+  stroke:black;
+  stroke-width: 2;
 }
 
 .chart {
   display: block;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .d3-tip {
@@ -51,6 +57,7 @@
   background: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
 }
+
 
 /* Mobile Rules */
 @media screen and (max-width: 530px) {

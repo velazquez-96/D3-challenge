@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>D3Times</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/d3Style.css">
 
@@ -12,48 +13,58 @@
 
 <body>
   <div class="container">
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">Data Journalism</h1>
+        <p class="lead">Explore the current trends about the health risks facing America.</p>
+      </div>
+    </div>
     <div class="row">
       <div class="col-xs-12 col-md-12">
         <h1>D3Times</h1>
+        <p>The graphs and results founded were based on 2014 ACS 1 year estimates. Feel free to interact with the scatter plot changing its y and x axes.</p>
+        <hr>
       </div>
     </div>
+    <div class="row" <div class="col-xs-12  col-md-9">
+      <div id="scatter">
+        <!-- We append our chart here. -->
+      </div>
+    </div>
+
     <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-          <!-- We append our chart here. -->
+      <div class="col-xs-12  col-md-10">
+        <div class="box-corr">
+          <div class="article">
+            <h2>Correlations Discovered Between Health Risks, Age, Income and Poverty</h2>
+            <hr>
+            <p>One of the most important correlations founded is between household income and each of the health risks that appear in the dataset. The figure shows that if the household income increases the percentage of people with obesity, smokers and the ones that lack healthcare appears to decrease. That is, the figure shows the existence of a negative correlation between household income and health risks. Also, it can be seen that the states that have the highest income are Washington, Alaska, New Jersey, and Maryland.</p>
+
+            <p>On the other hand, the figure shows another relevant correlation between poverty and each of the health risks that appear in the dataset. The results indicate that as the percentage of poverty increases each of the health risks appears to increase as well. That is, a positive correlation is found between poverty and every health risk. Mississippi, Lousiana, and New Mexico are the states with the highest poverty percentage.</p>
+
+            <p>Finally, something that worth saying is related to age. This factor does not appear to correlate to any of the health risks contained in the dataset either positive or negative. Further analysis needs to be done to calculate the Pearson coefficient and therefore determine the level of correlation between factors. Meanwhile, the graphs suggest the presence of some clear correlations.</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-        </div>
-      </div>
-    </div> -->
+  </div>
   </div>
 
   <!-- Footer-->
   <div id="footer">
-    <p>The Coding Boot Camp&copy;2016</p>
+    <p>The Coding Boot Camp&copy;2020</p>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-  <script type="text/javascript" src="static/js/app.js"></script>
+  <!-- <script type="text/javascript" src="static/js/app.js"></script> -->
+  <script type="text/javascript" src="static/js/bonus.js"></script>
 
 
 </body>
