@@ -229,7 +229,7 @@ d3.csv("data.csv").then(function (usData, err) {
 
     // Create group for y-axis labels
     let labelsGroupY = chartGroup.append("g")
-        .attr("transform", `translate(${0 - margin.left / 4}, ${height / 2})`);
+        .attr("transform", `translate(${0 - margin.left / 5}, ${height / 2})`);
 
     let healthcareLabel = labelsGroupY.append("text")
         .attr("transform", "rotate(-90)")
@@ -253,7 +253,7 @@ d3.csv("data.csv").then(function (usData, err) {
         .attr("x", 0)
         .attr("value", "obesity")
         .classed("inactive", true)
-        .text("Obese(%)");
+        .text("Obesity(%)");
 
     // updateToolTip function 
     var circlesGroup = updateToolTip(chosenXaxis, circlesGroup, chosenYaxis);
