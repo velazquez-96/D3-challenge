@@ -13,3 +13,9 @@ The data used is based on 2014 ACS 1-year estimates: https://factfinder.census.g
 ## Built with
 
 * D3 
+
+## Outcome 
+
+Interactive scatter plot that correlate different health risks with poverty, age and household income
+
+![Functionality](images/Functionality.gif)
