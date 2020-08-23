@@ -1,4 +1,4 @@
-# D3-challenge
+# Data journalism
 
 An interactive scatter plot was made to analyze health risks facing particular demographics. Information from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System was used to make the analysis.
 
@@ -8,11 +8,13 @@ The data used is based on 2014 ACS 1-year estimates: https://factfinder.census.g
 
 ## Features
 
-* Interactive D3 Scatter plot
+* Interactive D3.js Scatter plot
 
 ## Built with
 
-* D3 JS
+* D3.js
+* HTML
+* CSS
 
 ## Outcome 
 
