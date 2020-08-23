@@ -4,7 +4,7 @@ An interactive scatter plot was made to analyze health risks facing particular d
 
 ## Data
 
-The data used is based on 2014 ACS 1-year estimates: https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml.The current data set incldes data on rates of income, obesity, poverty, etc. by state. MOE stands for "margin of error."
+The data used is based on 2014 ACS 1-year estimates: https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml. The current [dataset](D3_data_journalism/data.csv) incldes data on rates of income, obesity, poverty, etc. by state. MOE stands for "margin of error."
 
 ## Features
 
