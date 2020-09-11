@@ -1,6 +1,6 @@
 # Data journalism
 
-An interactive scatter plot is made to analyze health risks facing particular demographics. Information from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System is used to make the analysis.
+**An interactive scatter plot** is made to analyze health risks facing particular demographics. Information from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System is used to make the analysis.
 
 ## Data
 
@@ -13,11 +13,11 @@ The data used is based on [2014 ACS 1-year estimates](https://factfinder.census.
 ## Built with
 
 * D3.js
-* HTML
-* CSS
+* HTML/CSS
+* Bootstrap
 
 ## Outcome 
 
-Interactive scatter plot that correlate different health risks with poverty, age and household income. The scatter plot give you the chance to change x and y axes to check the correlations between different factors.
+Interactive scatter plot that correlate different health risks with poverty, age and household income. **The scatter plot give you the chance to change x and y axes to check the correlations between different factors.**
 
 ![Functionality](images/Functionality.gif)
